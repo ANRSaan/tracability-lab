@@ -21,9 +21,9 @@ rollbar.log('Hello world!')
 app.use('/', express.static(path.join(__dirname, './index.html')))
 
 
-app.get('api/clicky', (req, res) => {
-    res.status(200).send()
-})
+// app.get('api/clicky', (req, res) => {
+//     res.status(200).send()
+// })
 
 
 
