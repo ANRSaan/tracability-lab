@@ -25,6 +25,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/clicky', (req, res) => {
+    rollbar.info('Someone somewhere clicked a lonely button')
     res.status(200).send()
 })
 
