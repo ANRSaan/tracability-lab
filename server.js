@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'))
 })
 
-app.get('/api/clicky', (req, res) => {
+app.get('http://localhost:5050/api/clicky', (req, res) => {
     res.status(200).send()
 })
 
