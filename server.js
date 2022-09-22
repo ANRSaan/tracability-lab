@@ -17,6 +17,9 @@ var rollbar = new Rollbar({
 // record a generic message and send it to Rollbar
 rollbar.log('Hello world!')
 
+app.get('api/clicky', (req, res) => {
+    res.status(200).send()
+})
 
 
 
