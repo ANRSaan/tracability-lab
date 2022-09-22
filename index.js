@@ -12,3 +12,5 @@ const clicky = () => {
             console.log(err)
         })
 }
+
+clickButton.addEventListener('click', clicky)
