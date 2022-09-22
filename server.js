@@ -18,10 +18,12 @@ var rollbar = new Rollbar({
 rollbar.log('Hello world!')
 
 
-// app.use('/', express.static(path.join(__dirname, './index.html')))
-
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'))
+})
+
+app.get('/js', (req,res) => {
+    res.sendFile(path.join(__dirname, './index.js'))
 })
 
 app.get('/api/clicky', (req, res) => {
