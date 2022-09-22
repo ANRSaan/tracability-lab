@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/js', (req,res) => {
-    res.sendFile(path.join(__dirname, './index.js'))
+    res.sendFile(path.join(__dirname, '/index.js'))
 })
 
 app.get('/api/clicky', (req, res) => {
